@@ -43,11 +43,12 @@
                         <span class="text-white">Generate quizzes from YouTube links</span>
                     </div>
                 </div>
-                <div
-                    class="flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                <button type="button"
+                    class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
                     <span>Get Started as Teacher</span>
                     <i class="ph ph-arrow-right"></i>
-                </div>
+                </button>
+
             </div>
 
             <!-- Card 2 -->
@@ -85,11 +86,11 @@
                         <span class="text-white">Real-time results & feedback</span>
                     </div>
                 </div>
-                <div
-                    class="flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                <button type="button"
+                    class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
                     <span>Get Started as Student</span>
                     <i class="ph ph-arrow-right"></i>
-                </div>
+                </button>
             </div>
         </div>
     </div>
