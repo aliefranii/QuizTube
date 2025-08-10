@@ -8,7 +8,7 @@
         </div>
 
         <div class="mx-auto flex flex-row mt-15 gap-8 justify-center">
-            <!-- Card 1 -->
+            <!-- Card 1 - Teacher -->
             <div
                 class="w-[500px] p-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl shadow-sm space-y-6 transform transition duration-300 ease-in-out hover:scale-105">
                 <div class="flex flex-col items-center justify-center space-y-4">
@@ -43,15 +43,28 @@
                         <span class="text-white">Generate quizzes from YouTube links</span>
                     </div>
                 </div>
-                <button type="button"
-                    class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
-                    <span>Get Started as Teacher</span>
-                    <i class="ph ph-arrow-right"></i>
-                </button>
 
+                @if (session()->has('user'))
+                    @if (session('user.role') === 'teacher')
+                        <a href="{{ url('/dashboard-teacher') }}"
+                            class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                            <span>Go to Dashboard</span>
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                    @else
+                        <span class="block w-full text-center text-white/70 text-sm">Login sebagai siswa, tidak bisa
+                            akses Teacher Dashboard</span>
+                    @endif
+                @else
+                    <a href="{{ url('/register?role=teacher') }}"
+                        class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                        <span>Get Started as Teacher</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </a>
+                @endif
             </div>
 
-            <!-- Card 2 -->
+            <!-- Card 2 - Student -->
             <div
                 class="w-[500px] p-8 bg-gradient-to-br from-green-600 to-green-700 rounded-xl shadow-sm space-y-6 transform transition duration-300 ease-in-out hover:scale-105">
                 <div class="flex flex-col items-center justify-center space-y-4">
@@ -86,11 +99,25 @@
                         <span class="text-white">Real-time results & feedback</span>
                     </div>
                 </div>
-                <button type="button"
-                    class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
-                    <span>Get Started as Student</span>
-                    <i class="ph ph-arrow-right"></i>
-                </button>
+
+                @if (session()->has('user'))
+                    @if (session('user.role') === 'student')
+                        <a href="{{ url('/dashboard-student') }}"
+                            class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                            <span>Go to Dashboard</span>
+                            <i class="ph ph-arrow-right"></i>
+                        </a>
+                    @else
+                        <span class="block w-full text-center text-white/70 text-sm">Login sebagai guru, tidak bisa
+                            akses Student Portal</span>
+                    @endif
+                @else
+                    <a href="{{ url('/register?role=student') }}"
+                        class="w-full flex items-center justify-center bg-white text-lg text-blue-700 px-4 py-1 gap-4 rounded-xl font-medium">
+                        <span>Get Started as Student</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </a>
+                @endif
             </div>
         </div>
     </div>

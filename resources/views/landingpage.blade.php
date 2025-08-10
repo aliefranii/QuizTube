@@ -38,50 +38,43 @@
                 <span>Why Choose QuizTube?</span>
             </div>
         </div>
-        <div class="flex flex-row mx-20 gap-6 justify-center">
-            <!-- Card 1 -->
-            <div
-                class="max-w-xl bg-white flex flex-col gap-4 items-center rounded-xl py-10 px-10 shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div class="text-7xl text-black">
-                    <i class="ph ph-video"></i>
+        <div class="flex flex-row mx-20">
+            <div class="flex flex-row gap-6"> <!-- Gap added here -->
+                <div class="max-w-xl bg-white flex flex-col gap-2 items-center rounded-xl py-15 px-10">
+                    <div class="text-7xl text-black">
+                        <i class="ph ph-video"></i>
+                    </div>
+                    <div class="text-center text-xl font-bold">
+                        <h2>Video-Based Learning</h2>
+                    </div>
+                    <div class="text-center text-lg text-slate-600">
+                        <p>Transform any YouTube video into an interactive learning experience</p>
+                    </div>
                 </div>
-                <div class="text-center text-xl font-bold">
-                    <h2>Video-Based Learning</h2>
+                <div class="max-w-xl bg-white flex flex-col gap-2 items-center rounded-xl py-15 px-10">
+                    <div class="text-7xl text-black">
+                        <i class="ph ph-robot"></i>
+                    </div>
+                    <div class="text-center text-xl font-bold">
+                        <h2>AI-Generated Quizzes</h2>
+                    </div>
+                    <div class="text-center text-lg text-slate-600">
+                        <p>Smart AI creates relevant questions automatically from video content</p>
+                    </div>
                 </div>
-                <div class="text-center text-lg text-slate-600">
-                    <p>Transform any YouTube video into an interactive learning experience</p>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div
-                class="max-w-xl bg-white flex flex-col gap-4 items-center rounded-xl py-10 px-10 shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div class="text-7xl text-black">
-                    <i class="ph ph-robot"></i>
-                </div>
-                <div class="text-center text-xl font-bold">
-                    <h2>AI-Generated Quizzes</h2>
-                </div>
-                <div class="text-center text-lg text-slate-600">
-                    <p>Smart AI creates relevant questions automatically from video content</p>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div
-                class="max-w-xl bg-white flex flex-col gap-4 items-center rounded-xl py-10 px-10 shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div class="text-7xl text-black">
-                    <i class="ph ph-lightning"></i>
-                </div>
-                <div class="text-center text-xl font-bold">
-                    <h2>Instant Results</h2>
-                </div>
-                <div class="text-center text-lg text-slate-600">
-                    <p>Get immediate feedback and detailed explanations for every answer</p>
+                <div class="max-w-xl bg-white flex flex-col gap-2 items-center rounded-xl py-15 px-10">
+                    <div class="text-7xl text-black">
+                        <i class="ph ph-lightning"></i>
+                    </div>
+                    <div class="text-center text-xl font-bold">
+                        <h2>Instant Results</h2>
+                    </div>
+                    <div class="text-center text-lg text-slate-600">
+                        <p>Get immediate feedback and detailed explanations for every answer</p>
+                    </div>
                 </div>
             </div>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
